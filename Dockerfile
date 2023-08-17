@@ -9,7 +9,7 @@ RUN mkdir files_to_upload
 RUN cd files_to_upload
 
 RUN curl http://vxvault.net/URL_List.php > urls.txt
-RUN grep '^http' urls.txt| wget -i --tries=1 --timeout=5
+RUN grep '^http' urls.txt | wget -i --tries=1 --timeout=5
 
 WORKDIR /app
 
